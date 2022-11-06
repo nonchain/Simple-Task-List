@@ -17,7 +17,7 @@ const App = () => {
   }, [selectedTask.length]);
 
   return (
-    <div className='px-4 py-8 min-h-screen bg-background flex flex-col gap-8 md:flex-row'>
+    <div className='px-4 py-8 min-h-screen bg-background flex flex-col gap-8 md:px-8 lg:px-12 lg:py-10 md:flex-row'>
       <Card className='w-full bg-[#eaf6f6]' title='' buttonText=''>
         <div className="mb-8 flex items-center justify-between">
           <h2 className='text-title font-medium text-3xl'>All Data</h2>
