@@ -1,5 +1,4 @@
 import React from 'react';
-import ButtonSmall from './ButtonSmall'
 
 const Card = ({children, className}) => {
   return (
