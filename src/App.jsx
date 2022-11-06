@@ -17,15 +17,15 @@ const App = () => {
   }, [selectedTask.length]);
 
   return (
-    <div className='px-4 py-8 min-h-screen bg-background flex flex-col gap-8'>
-      <Card className='bg-[#eaf6f6]' title='' buttonText=''>
+    <div className='px-4 py-8 min-h-screen bg-background flex flex-col gap-8 md:flex-row'>
+      <Card className='w-full bg-[#eaf6f6]' title='' buttonText=''>
         <div className="mb-8 flex items-center justify-between">
           <h2 className='text-title font-medium text-3xl'>All Data</h2>
           <ButtonSmall text='Add' disable={ disableButton } />
         </div>
         <TaskList />
       </Card>
-      <Card className='bg-[#eaf6f6]' title='' buttonText=''>
+      <Card className='w-full bg-[#eaf6f6]' title='' buttonText=''>
         <div className="mb-8 flex items-center justify-between">
           <h2 className='text-title font-medium text-3xl'>Selected Data</h2>
           <ButtonSmall text='Delete' disable={true} />
