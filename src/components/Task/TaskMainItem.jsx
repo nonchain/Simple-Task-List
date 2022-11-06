@@ -17,7 +17,9 @@ const TaskMainItem = ({ category, tasks }) => {
             <div className='w-8 h-8 flex items-center justify-center rounded-full bg-title'>
                <span className='text-white text-sm font-semibold'>{category}</span>
             </div>
+
             <h3 className='font-medium text-base'>quantity: {subTasks.length}</h3>
+
             <div className='flex items-center gap-2'>
                <Checkbox />
                <button onClick={showTaskListHandler}>
@@ -25,6 +27,7 @@ const TaskMainItem = ({ category, tasks }) => {
                </button>
             </div>
          </div>
+         
          {
             visibility && <ul className='flex flex-col'>
                {
