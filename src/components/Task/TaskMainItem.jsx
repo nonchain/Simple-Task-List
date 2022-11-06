@@ -10,6 +10,7 @@ const TaskMainItem = ({ category, tasks }) => {
       console.log(`${category} clicked`)
       setVisibility(!visibility)
    }
+
    return (
       <div className="flex flex-col gap-2">
          <div className='px-4 py-3 w-full bg-primary flex items-center justify-between rounded'>
@@ -29,7 +30,7 @@ const TaskMainItem = ({ category, tasks }) => {
                {
                   subTasks?.map(item => (
                      <li key={item.uniqueId} className='my-1'>
-                        <TaskSubItem title={item.title} date={item.created} />
+                        <TaskSubItem title={item.title} date={item.created} task={item}/>
                      </li>
                   ))
                }
